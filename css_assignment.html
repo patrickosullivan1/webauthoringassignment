@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS-Cascading Style Sheets</title>
+<style>
+	
+body {
+	background-color: #D9D9D9;
+	color: #343434;
+}
+
+#wrapper {
+	border-radius: 25px;
+	background-color: #9A9A9A;
+	max-width: 1500px;
+	margin: auto;
+}
+header {
+	text-align: center;
+    background-color: #F0E9E9;
+    border-width: medium;
+    border-color: black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 200px;
+    color: #343434;
+	}
+nav  {
+	background-color: d4cdcd;
+	height: 120px;
+	border-style: inset;
+	}
+nav ul{
+	 list-style-type: none;
+	}
+nav li{
+	display: inline;
+	}
+
+a:link {
+	text-decoration:none;
+	list-style-type: none;
+	background-color: cornflowerblue;
+	border: thin solid;
+	border-color: crimson;
+	width: 150px;
+	padding-right: 3px;
+	padding-left: 3px;
+	text-align: center;
+	color: black	
+	}
+
+li a:hover {
+  background-color: lightslategray;
+text-decoration-line: underline;
+				}
+li a:active	{
+	background-color: saddlebrown;
+    color: beige;		
+			}
+li a:visited {
+	background-color: darkblue;
+    color: antiquewhite;
+}
+
+main  {
+	background-color: #FFFFFF;
+	border-color: darkgrey;
+	border: thin;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	width: 60%;
+	float: left;
+		}
+section{
+	margin-left: 15px;
+	margin-right: 15px;
+	}
+h3 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-style: oblique;
+	font-variant: small-caps;
+	font-weight: 200;
+	text-decoration: underline;
+	text-align: center;
+	line-height: normal;
+	color: deeppink;
+	}
+h2 {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-style: normal;
+	font-weight: 200;
+	text-align: center;
+	}
+.section1{
+	background-color: dimgrey;
+	border: dotted;
+	border-color: brown;
+	}
+.stand-out-style {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: darkgrey;
+	font-color: lightgrey;
+	margin-left: 30px;
+	padding: 5px;
+	font-weight: 100;
+	font-style: italic;
+	}
+.section3  {
+		background-color: chartreuse;
+		list-style: url("images/sports1.jpg");
+		list-style-position: outside;
+		list
+		}
+	    
+aside{
+	background-color: #d4cdcd;
+	border-style: inset;
+	float: right;
+	width: 38%;
+		}
+footer{
+	clear: both;
+	height: 100px;
+	background-image: url("images/background.jpg");
+	border:solid;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	text-align: center;
+	color: white;
+	}	
+</style>		
+</head>
+
+<body>
+	<div id="wrapper">
+<header><h2>CSS Cascading Style Sheets</h2></header>
+	<nav>
+		<h2>The Navigation</h2>
+		<ul>
+		  <li><a href="index.html" title="Home Page" target="_blank">Home</a></li>
+		  <li><a href="#" title="Link 1" target="_blank">Link 1</a></li>
+		  <li><a href="#" title="Link 2" target="_blank">Link 2</a></li>
+		<li><a href="#" title="Link 3" target="_blank">Link 3</a></li>
+	  	</ul>
+	</nav>	
+	<main>
+	<h2>The Main</h2>
+	<section class="section1">
+	<h3 >This is my h3 tag style</h3>
+	</section>
+		<br>
+	<section class="stand-out-style">
+	  <p>Stand-out style applied in this paragraph.&nbsp;</p>
+	  <p>Stand-out style applied here. </p>
+	  <p>Stand-out style applied here.&nbsp;</p>
+    </section>
+	<section class="section3">
+		<ul>
+		<li>Rugby</li>
+		<li>Soccer</li>
+		<li>Gaelic Football</li>
+		<li>Hurling</li>
+		</ul>
+	</section>
+    </main>
+	<aside>
+	<h2>The Aside</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis vero impedit quis quos doloribus veritatis rerum magni enim, tenetur velit mollitia incidunt ducimus excepturi a debitis consectetur repellat eum optio!</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis eveniet accusamus dolores modi, quos architecto quod iusto amet, dolorem cupiditate excepturi praesentium illum omnis vero deleniti fugit laboriosam nemo ipsum?</p>
+	</aside>
+	<footer>
+		
+<h2>The footer&#169Patrick O Sullivan 2022</h2>	
+	</footer>
+	</div>
+</body>
+</html>
