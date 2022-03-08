@@ -53,13 +53,13 @@
 <p>&lt;div id="section1 "&gt;&lt;/div&gt;&nbsp; when styling this div in css it must be preceded by the # symbol&nbsp; &nbsp; #section1{}. The style will be applied to the elements within the div</p>
 <p>&lt;div id="section2"&gt;&lt;/div&gt; when styling this div in css use&nbsp; &nbsp; &nbsp; #section2 {}</p>
 
-<p>A div class on the other hand can only be used once. This can be used to style different elements that may appear in many of the different blocks e.g you may want to style all quotations in the document in the same way.</p>
+<p>A div class can be used to style more than one section within a document.  This can be used to style different elements that may appear in many of the different blocks e.g you may want to style all quotations in the document in the same way.</p>
 <p>You would then assign a class to quotations e.g.</p>
 <p>&lt;div class="quotations"&gt; &lt;/div&gt;</p>
 <p>When styling this div in css or inline it must be preceeded by a full stop&nbsp; &nbsp; .quotations{}&nbsp;&nbsp;</p>
 <p>The class can be used throughout the document whereas the id represents its own block.&nbsp; &nbsp;</p>
 <div style="background-color: aquamarine">
-<p>All the text within this div will have a background color of aquamarine</p>
+<p>All the text within this div is styled to have a background color of aquamarine</p>
 <p>The div is setup with that style</p>	
 <p>This is the last sentence within the div</p>	
 </div>
@@ -109,10 +109,12 @@
 </table>
 
 <h2>Lists</h2>
-<p>There are 2 types of lists</p>
+<p>There are 3 types of lists - ordered, unordered and definition</p>
 <p>&lt;ol&gt;&lt;/ol&gt; tags represent an ordered list - items will be displayed with numbers or letters</p>
 <p>&lt;ul&gt;&lt;/ul&gt; tags represent  an unordered list&nbsp; items will be displayed with bullet points</p>
-<p>&lt;li&gt;&lt;/li&gt; tags represent the items in the list - soccer, football and rugby</p>
+<p>&lt;li&gt;&lt;/li&gt; tags represent the items in the ordered and unordered lists - soccer, football and rugby below</p>
+<p>&lt;dl&gt;&lt;/dl&gt; tags represent a definition list&nbsp;</p>
+<p>The &lt;dt&gt;&lt;/dt&gt; lists the item and &lt;dd&gt;&lt;/dd&gt; is the definition of the item - see colleges and levels below&nbsp;</p>
 <p>Ordered List</p>
 <ol>
   <li>soccer</li>
@@ -123,7 +125,16 @@
 <ul>
 	<li>soccer</li>
 	<li>football</li>
-	<li>rugby</li>
+  <li>rugby</li>
+<p>Definition List</p>
+<dl>
+<dt>Knocklong National</dt>
+	<dd> - Primary School</dd>
+<dt>Scoil Pol</dt>
+	<dd> - Secondary School</dd>
+<dt>UCC</dt>
+	<dd> - Third Level College</dd>
+ </dl>
 </ul>
 <h2>images and alt</h2>
 <p>the &lt;img&gt; tag is used to embed images in web pages. Images are linked and the webpage must be told where to go find the. Generally this is in an images subfolder within the website folder. An images folder has been created for this purpose. Height and width can be specified in the code also.&nbsp; the &lt;img tag closes itself/&gt;</p>
@@ -141,8 +152,8 @@
 <p>&lt;a&gt; anchor&nbsp; ag&nbsp;</p>
 <p>The tag must also have a href to specify the page that you want to link to</p>
 <p>&nbsp;&lt;p&gt;&lt;a href="#" target="blank"&gt;cssassignment&lt;/a&gt;&lt;/p&gt;</p>
-<p><a href="#" target="blank">cssassignment</a></p>
-<p>The # represents a wbepage that has not yet been created ( name will be cssassignment.html) and target blank means that it will open in a new tab and this page will remain open also - so two pages open at once. If you wanted the linked page to open instead of this page the target would be "self". When ccsassignment.html is created this link will open that page.&nbsp; &nbsp; &nbsp;</p>
+<p><a href="css_assignment.html" target="blank">cssassignment</a></p>
+<p>Clicking on the link just above  will take you to cssassignment.html - the second page created for the website -&nbsp; and target blank means that it will open in a new tab and this page will remain open also - so two pages open at once. If you wanted the linked page to open instead of this page the target would be "self".&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
 
 <h2>quote and blockquote</h2>
 <p>To put text in quotation marks the tag &lt;q&gt;&lt;/q&gt; is used within the paragraph&nbsp;</p>
@@ -178,29 +189,47 @@
 <p>Input type can be 'text' for names and addresses, can be 'email', 'password' (hidden) or 'tel' for telephone number.   &nbsp;</p>
 <p>Input can be 'checkbox' where multiple options can be selected.</p>
 <p>Input is 'radio' where one option has to be chosen from more than one.</p>
-<p> Below is an example of a basic form to gather names,addresses and phone numbers. It is set up so that form must be complete before it can be submitted.</p>
+<p> Below is an example of a basic form to gather names,addresses, phone numbers and favourite sport. It is set up so that form must be complete before it can be submitted.</p>
 <form>
-<fieldset><legend>firstname</legend>
+<fieldset><legend>Firstname</legend>
 <input type="text" required="required" size="50" maxlength="50">
 </fieldset>	
-<fieldset><legend>surname</legend>
+<fieldset><legend>Surname</legend>
 <input type="text" required="required" size="50" maxlength="50">
 </fieldset>	
 <fieldset>
-<input type="text" required="required" placeholder="addrsssline1" size="100" maxlength="100">
+<input type="text" required="required" placeholder="Addrsssline1" size="100" maxlength="100">
 </fieldset>
 <fieldset>
-<input type="text" required="required" placeholder="addresline2" size="50" maxlength="100">
+<input type="text" required="required" placeholder="Addressline2" size="50" maxlength="100">
 </fieldset>
 <fieldset>
 <input type="text" required="required" placeholder="City" size="50" maxlength="100">
 </fieldset>
 <fieldset>
-<input type="tel" required="required" placeholder="telephone number">
+<input type="tel" required="required" placeholder="Telephone Number">
 </fieldset>
-<a href="index.html">
+<fieldset><legend>Favourite Sport</legend>
+<p>
+<label>
+<input type="radio" name="favouritesport" value="radio" id="favouritesport_0">
+	      Hurling</label>
+<br>
+<label>
+<input type="radio" name="favouritesport" value="radio" id="favouritesport_1">
+	      Soccer</label>
+<br>
+<label>
+<input type="radio" name="favouritesport" value="radio" id="favouritesport_2">
+	      Gaelic Football</label>
+<br>
+<label>
+<input type="radio" name="favouritesport" value="radio" id="favouritesports_3">
+	      Rugby</label>
+<br>
+ </p>
+ </fieldset>
 <button>Submit</button>	
-</a>
 </form>
 
 <h2>special symbols and character entities:</h2>
