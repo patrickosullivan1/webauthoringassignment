@@ -2,266 +2,259 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Introduction to HTML by Patrick O'Sullivan</title>
+<title>POSInternet Development</title>
+	<script src="https://kit.fontawesome.com/92a76c5267.js" crossorigin="anonymous"></script>
+<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon"
+	href="images/favicon2.ico" type="image/x-icon">
+	<style>
+	#wrapper{
+			max-width: 1500px;
+			margin-left: auto;
+			margin-right: auto;
+				}
+		header{
+			height: 300px;
+			background-image:url("images/banner.jpg")
+		}
+		nav{
+			color: F9062B;
+			overflow: hidden;
+			width: 100%;
+			padding-left: 60px;
+		}
+		header li{
+			float: left;
+			list-style-type: none;
+			padding-top: 10px;
+			padding-right: 50px;
+			padding-left: 40px;
+			font-size: 20px;	
+		}
+		header img{
+			margin-right: 600px;
+			margin-left: 1300px;
+			margin-top: 50px;
+		
+		}
+		header nav li{
+		margin-right: 600px;
+			margin-left: 1200px;
+		
+		}
+		main{
+			margin-left: 300px;
+			align-content: center;
+		}
+		aside{
+			width: 20%;
+		}
+		
+		main ul{
+			clear: all;
+			align-items: center;
+			position: sticky;
+			border: medium;
+			border-color: #000011;
+			border-style: solid;
+		}
+		.video { 
+		margin-left: 175px;  
+		}  
+		.video h3{
+			margin-left: -130px;
+		}
+		.link{
+		margin-left: 360px;
+		}
+	
+		.aside1{
+			float: left;
+			margin-left: -302px;
+			background-color: #72BBFF;
+			width: 300px;
+			height: 1620px;
+			margin-top: -60px;
+			position: sticky;
+			border: medium;
+			border-color: #000011;
+			border-style: solid;
+		}
+		.aside1 h3 {
+			text-align: center;
+		}
+		.aside2 {
+			float: right;
+			margin-right: -302px;
+			margin-top: -60px;
+			width: 300px;
+			height: 1620px;
+			background-color: #72BBFF;
+			position: sticky;
+			border:medium;
+			border-color: #000011;
+			border-style: solid;
+		}
+		.aside2 h3{
+			text-align: center;
+		}
+		h1{
+			text-align: center;
+		}
+		h3{
+			text-align: center;
+		}
+		h4{
+			text-align: center;
+		}
+	
+		
+	
+	</style>
 </head>
 
 <body>
-	<h1>Introduction to HTML by Patrick O'Sullivan</h1>
-	<h2>Doctype</h2>
-	<p>The  declaration is the first line of the code in HTML or XHTML document. It specifies the HTML version used in the document. </p>
-<p>&nbsp;&lt;!doctype html&gt;</p>
-    <p><strong>Example&nbsp;</strong></p>
-<p>&nbsp;&lt;!DOCTYPE html&gt;</p>
-<p>&nbsp;&lt;html&gt;</p>
-<p>&nbsp;&lt;head&gt;&nbsp;</p>
-<p>&lt;title&gt;Rugby Stats&lt;/title&gt;&nbsp;</p>
-<p>&lt;/head&gt;&nbsp;</p>
-<p>&lt;body&gt; &lt;p&gt;Welcome To My Stats Page&lt;/p&gt;</p>
-<p>&nbsp;&lt;/body&gt;</p>
-<p>&nbsp;&lt;/html&gt;</p>
-<p><strong>Output</strong></p>
-	<p>Welcome To My Stats Page&nbsp;&nbsp;</p>
-<h2>html</h2>
-	<p> HTML (HyperText Markup Language) is a primary markup language for creating websites. It consists of a series of codes used to structure texts, images, and other content to be displayed in the browser. It is the first and last tag on the page after the Doctype </p>
-	<p>&nbsp;&lt;html&gt;&lt;/html&gt;</p>
-<h2>head</h2>
-	<p>The head element is a container for metadata (data about data) and is placed between the html tag and the body tag.</p>
-	<p>Metadata typically define the document title, language, keywords (for search engines) and is not displayed on the webpage</p>
-	<p>&lt;head&gt;&lt;/head&gt;&nbsp;</p>
-<h2>body</h2>
-<p>The body is the visible part of the webpage. All text and images included between the body/close body tags will be displayed on the webpage. In the above example the visible part of the page would be&nbsp;</p>
-<p>&nbsp;Welcome To My Stats Page&nbsp;</p>
-<p>&lt;body&gt;&lt;/body&gt;&nbsp;</p>
-    <h2>title</h2>
-<p>The title tag defines the title of the document and must be text only. It is shown in the browser page tab. In the above example Rugby Stats would be the tab title&nbsp;&nbsp;</p>
-    <p>&lt;title&gt;&lt;/title&gt;&nbsp;</p>
-<h2>p</h2>
-	<p> &lt;p&gt;This is a paragraph&lt;/p&gt;</p>
-		<p>A paragraph generally is a block of text in the webpage. It may contain images and links within the block.&nbsp; &nbsp; &nbsp;&nbsp;</p>
-	<p>This is a paragraph within this document </p>
-        <h2>span</h2>
-<p>The span is an inline&nbsp; container used to style part of a sentence or paragraph</p>
-<p>&nbsp; &lt;p&gt;This is my &lt;span style ="color:red"&gt;first&lt;/span&gt; HTML document&lt;/p&gt;</p>
-<p>&nbsp;In this case the word first will be red.</p>
-<p>This is my <span style ="color:red">first</span> HTML document</p>
-
-<p>&nbsp;</p>
-<h2>Div</h2>
-<p>&lt;div&gt;&lt;/div&gt;&nbsp;</p>
-<p>The div tag divides a section within the html document.&nbsp;</p>
-<p>&nbsp;The document can contain as many div ids or blocks as needed. Different ids will need to be assigned to each block within the document and each can then be styled differently e.g&nbsp;</p>
-<p>&lt;div id="section1 "&gt;&lt;/div&gt;&nbsp; when styling this div in css it must be preceded by the # symbol&nbsp; &nbsp; #section1{}. The style will be applied to the elements within the div</p>
-<p>&lt;div id="section2"&gt;&lt;/div&gt; when styling this div in css use&nbsp; &nbsp; &nbsp; #section2 {}</p>
-
-<p>A div class can be used to style more than one section within a document.  This can be used to style different elements that may appear in many of the different blocks e.g you may want to style all quotations in the document in the same way.</p>
-<p>You would then assign a class to quotations e.g.</p>
-<p>&lt;div class="quotations"&gt; &lt;/div&gt;</p>
-<p>When styling this div in css or inline it must be preceeded by a full stop&nbsp; &nbsp; .quotations{}&nbsp;&nbsp;</p>
-<p>The class can be used throughout the document whereas the id represents its own block.&nbsp; &nbsp;</p>
-<div style="background-color: aquamarine">
-<p>All the text within this div is styled to have a background color of aquamarine</p>
-<p>The div is setup with that style</p>	
-<p>This is the last sentence within the div</p>	
-</div>
-<p></p>
-<h2>Heading elements- h1 to h6</h2>
-<p>H1 to H6 categorise headings from the most important h1 to the least h6&nbsp;</p>
-<p>&lt;h1&gt;This is a heading 1&lt;/h1&gt;</p>
-<h1>This is a heading 1</h1>
-<p>&nbsp;&lt;h2&gt;This is a heading 2&lt;/h2&gt;</p>
-<h2>This is heading 2</h2>
-<p>&nbsp;&lt;h3&gt;This is a heading 1&lt;/h3&gt;</p>
-<h3>This is heading 3</h3>
-<p>&nbsp;&lt;h4&gt;This is a heading 1&lt;/h4&gt;</p>
-<h4>This is heading 4</h4>
-<p>&nbsp;&lt;h5&gt;This is a heading 1&lt;/h5&gt;</p>
-<h5>This is heading 5</h5>
-<p>&lt;h6&gt;This is a heading 6&lt;/h6&gt;&nbsp;</p>
-<h6>This is heading 6</h6>
-<h2>Formatting elements - strong, emphasis</h2>
-<p>&lt;strong&gt;&lt;/strong&gt; The strong tag is used to highlight  a word or a sentence. The formatted text appears as bold.</p>
-<p>&lt;p&gt;This is my &lt;strong&gt;first&lt;/strong&gt; HTML document&lt;/p&gt;&nbsp;</p>
-<p>This is my <strong>first</strong> HTML document</p>
-<p>&lt;em&gt;&lt;/em&gt; The em or emphasis tag is used to showemphasis on a word or sentence. The text appears italised</p>
-<p>&nbsp;&lt;p&gt;You must &lt;em&gt;show up&lt;/em&gt; on time&lt;/p&gt;</p>
-<p>You must <em>show up</em> on time</p>
-<p>&nbsp;</p>
-<h2>tables and caption</h2>
-<p>The &lt;table&gt;&lt;/table&gt; tag is a way of organising data within a webpage</p>
-<p>The table has subtags</p>
-<p>&lt;tr&gt;&lt;/tr&gt; for table row - 2 rows with a header and data</p>
-<p>&lt;th&gt;&lt;/th&gt; for table headers - Coffee Tea and Water. These are in bold</p>
-<p>&lt;td&gt;&lt;/td&gt; for the data contained in the table - 20, 30, 50</p>
-<p>&lt;caption&gt;&lt;/caption&gt; is the title of the table and must be entered right after the &lt;table&gt; tag Drink of choice 100 people is the table caption below</p>
-<table>
-<caption>Drink of choice - 100 people</caption>	
-<tr>
-	<th>Coffee</th>
-	<th>Tea</th>
-	<th>Water</th>
-</tr>
-<tr>
-	<td>20</td>
-	<td>30</td>
-	<td>50</td>
-</tr>
-	
-</table>
-
-<h2>Lists</h2>
-<p>There are 3 types of lists - ordered, unordered and definition</p>
-<p>&lt;ol&gt;&lt;/ol&gt; tags represent an ordered list - items will be displayed with numbers or letters</p>
-<p>&lt;ul&gt;&lt;/ul&gt; tags represent  an unordered list&nbsp; items will be displayed with bullet points</p>
-<p>&lt;li&gt;&lt;/li&gt; tags represent the items in the ordered and unordered lists - soccer, football and rugby below</p>
-<p>&lt;dl&gt;&lt;/dl&gt; tags represent a definition list&nbsp;</p>
-<p>The &lt;dt&gt;&lt;/dt&gt; lists the item and &lt;dd&gt;&lt;/dd&gt; is the definition of the item - see colleges and levels below&nbsp;</p>
-<p>Ordered List</p>
-<ol>
-  <li>soccer</li>
-	<li>football</li>
-	<li>rugby</li>
-</ol>
-<p>Unordered List</p>
+	<div id="wrapper">
+<header>
+	<img src="images/Susclo1.png" width="100" height="100" alt="logo"/>
+	<nav>
+	<li><li><input type="search"><a href="search.html" title="search" target="_blank"><i class="fas fa-search">Search</i></a></li></li>
+		</nav>
+			
+		</header>
+		<main>
+	<nav>  
 <ul>
-	<li>soccer</li>
-	<li>football</li>
-  <li>rugby</li>
-<p>Definition List</p>
-<dl>
-<dt>Knocklong National</dt>
-	<dd> - Primary School</dd>
-<dt>Scoil Pol</dt>
-	<dd> - Secondary School</dd>
-<dt>UCC</dt>
-	<dd> - Third Level College</dd>
- </dl>
-</ul>
-<h2>images and alt</h2>
-<p>the &lt;img&gt; tag is used to embed images in web pages. Images are linked and the webpage must be told where to go find the. Generally this is in an images subfolder within the website folder. An images folder has been created for this purpose. Height and width can be specified in the code also.&nbsp; the &lt;img tag closes itself/&gt;</p>
-<p>alt specifies text that will be instead of the picture in case the picture cannot be show. In this case the alt is baseball brawl&nbsp;</p>
-<p>&nbsp;&lt;img src="images/baseballbrawl.jpg" width="200" height="200" alt="baseball brawl"/&gt;</p>
-<img src="images/baseballbrawl.jpg" width="200" height="200" alt="baseball brawl"/>
-<p>&nbsp;</p>
-<h2>links</h2>
-<p>In the header with the other meta data a style sheet .css file can be linked to the html document. This style sheet will be used instead of inline styling to style the elements of the webpage.</p>
-<p>&nbsp;&lt;link href="styles.css" rel="stylesheet" type="text/css"&gt;</p>
-<p>href specifies the location of the file - generally in the site folder. rel&nbsp; specifies the relationship i.e. stylesheet for the html file and type is the media type i.e. what is the output device.</p>
-<p>This link is invisible on the webpage itself and cannot be opened from the browser.</p>
-<hr>
-<p>Links to other web pages either within or without the site are created use the&nbsp;</p>
-<p>&lt;a&gt; anchor&nbsp; ag&nbsp;</p>
-<p>The tag must also have a href to specify the page that you want to link to</p>
-<p>&nbsp;&lt;p&gt;&lt;a href="#" target="blank"&gt;cssassignment&lt;/a&gt;&lt;/p&gt;</p>
-<p><a href="css_assignment.html" target="blank">cssassignment</a></p>
-<p>Clicking on the link just above  will take you to cssassignment.html - the second page created for the website -&nbsp; and target blank means that it will open in a new tab and this page will remain open also - so two pages open at once. If you wanted the linked page to open instead of this page the target would be "self".&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+	
+	<li><a href="index.html" title="Home Page" target="_blank"> <i class="fas fa-home"></i>Home</a></li>
+		<li><a href="gallery.html" title="Gallery" target="_blank">
+			Gallery</a></li>
+			
+		<li><a href="social.html" title="Community" target="_blank">
+		Community</a></li>
+       <div class="Dropdown">
+			<li><a href="womens.html" class="active"> Shop Womens</a></li>	   
+<div class="Dropdown-content">
+  
+  <a href="dresses.html">Shop Dresses</a>
+  <a href="hoodies.html">Shop Hoodies</a>
+  <a href="womenstrousers.html">Shop Trousers</a>
+  <a href="womenshats.html">Shop Hats</a>
+  <a href="womensshoes.html">Shop Shoes</a>
+  <a href="womensbags.html">Shop Bags</a>
+</div>
+	</div>
+	
 
-<h2>quote and blockquote</h2>
-<p>To put text in quotation marks the tag &lt;q&gt;&lt;/q&gt; is used within the paragraph&nbsp;</p>
-<p>&nbsp;&lt;p&gt; Richard Nixon famously said &lt;q&gt;I am not a crook&lt;/q&gt; when leaving the White House in disgrace &lt;/p&gt;</p>
-<p> Richard Nixon famously said <q>I am not a crook</q> when leaving the White House in disgrace </p>
-	<hr>
-<p>Blockquote &lt;blockquote&gt;&lt;/blockquote&gt; is generally used for longer quotes&nbsp; and appears indented on the page&nbsp;&nbsp;</p>
-<p>&nbsp;&lt;blockquote&gt;&nbsp; Have respect for yourself Have respect for the officials Have respect for your opponents Have respect for the game and written/unwritten rules &lt;/blockquote&gt;&nbsp;</p>
-<p>Any tabs, line spaces or line breaks will not appear&nbsp; &nbsp;</p>
-<blockquote cite="file:///C:/Users/21.patrick.osullivan/OneDrive%20-%20Limerick%20and%20Clare%20ETB/Web%20Design/project/index.html">	
-  Have respect for yourself
-  Have respect for the officials
-  Have respect for your opponents
-  Have respect for the game and written/unwritten rules 
-</blockquote>
-<h2>abbreviations</h2>
-<p>The &lt;abbr&gt;&lt;/abbr&gt; tag defines an abbreviation or an acronym e.g. FAI</p>
-<p>&nbsp;&lt;p&gt;&lt;abbr title="Football Association of Ireland"&gt;FAI&lt;/abbr&gt;&lt;/p&gt;</p>
-<p>Hover over the abbreviation and the full title will be visible&nbsp;</p>
-<p><abbr title="Football Association of Ireland">FAI</abbr></p>
-<h2>meta</h2>
-<p>The &lt;meta&gt; tag is displayed in the &lt;head&gt; section&nbsp;</p>
-<p>&lt;meta&gt; displays metadata - data about other data e.g</p>
-<p>&nbsp;&lt;meta charset="utf-8"&gt; is the character ecoding, storage and transfer protocol.&nbsp;</p>
-<p>It also contains the keywords which search engines use to rank websites in searches. This is important when creating your site as you want to be viewed as much as possible.</p>
-<p>&nbsp;&lt;meta name="keywords" content="latest news, breaking news, Ireland news"&gt; may be keywords for a news website that wants viewers to visit for the most up to date news.</p>
-<p>Other data that can be included here is the name of the author or the frequency that the site refreshes.</p>
-<p>This data does not appear on the site.&nbsp;&nbsp;</p>
-<h2>forms</h2>
-<p>The &lt;form&gt;&lt;/form&gt; tags are used to solicit information from the user. Any information can be requested - name, address, phone number, email. Preferences can be sought either one or more.</p>
-<p>The &lt;form&gt; element is a container for inputting data such as name, address, phone number, selecting preferences and options.</p>
-<p>Between the &lt;form&gt;&lt;/form&gt; tags&nbsp; the&lt;fieldset&gt;&lt;/fieldset&gt; tags are set up.Within this  &lt;label&gt;&lt;/label&gt; tags are written. Before&nbsp; the label is applied  the &lt;input type =""&gt; is written and closed. The label or name of the field is entered.</p>
-<p>Input type can be 'text' for names and addresses, can be 'email', 'password' (hidden) or 'tel' for telephone number.   &nbsp;</p>
-<p>Input can be 'checkbox' where multiple options can be selected.</p>
-<p>Input is 'radio' where one option has to be chosen from more than one.</p>
-<p> Below is an example of a basic form to gather names,addresses, phone numbers and favourite sport. It is set up so that form must be complete before it can be submitted.</p>
-<form>
-<fieldset><legend>Firstname</legend>
-<input type="text" required="required" size="50" maxlength="50">
-</fieldset>	
-<fieldset><legend>Surname</legend>
-<input type="text" required="required" size="50" maxlength="50">
-</fieldset>	
-<fieldset>
-<input type="text" required="required" placeholder="Addrsssline1" size="100" maxlength="100">
-</fieldset>
-<fieldset>
-<input type="text" required="required" placeholder="Addressline2" size="50" maxlength="100">
-</fieldset>
-<fieldset>
-<input type="text" required="required" placeholder="City" size="50" maxlength="100">
-</fieldset>
-<fieldset>
-<input type="tel" required="required" placeholder="Telephone Number">
-</fieldset>
-<fieldset><legend>Favourite Sport</legend>
-<p>
-<label>
-<input type="radio" name="favouritesport" value="radio" id="favouritesport_0">
-	      Hurling</label>
-<br>
-<label>
-<input type="radio" name="favouritesport" value="radio" id="favouritesport_1">
-	      Soccer</label>
-<br>
-<label>
-<input type="radio" name="favouritesport" value="radio" id="favouritesport_2">
-	      Gaelic Football</label>
-<br>
-<label>
-<input type="radio" name="favouritesport" value="radio" id="favouritesports_3">
-	      Rugby</label>
-<br>
- </p>
- </fieldset>
-<button>Submit</button>	
-</form>
 
-<h2>special symbols and character entities:</h2>
-<h2>Copyright,</h2>
-<p>The copyright symbol</p>
-<p>Code is &amp;#169;</p>
-<p>&#169;</p>
-<h2>Registered Trademark,&nbsp;</h2>
-<p>&nbsp;The registered trademark</p>
-<p>Code is&nbsp; &amp;#8482;&nbsp;</p>
-<p>&#8482;</p>
-<h2>Ampersand,&nbsp;</h2>
-<p>&nbsp;Ampersand</p>
-<p>Code is &amp;#38; or &amp;amp;</p>
-<p>&#38;</p>
-<p>&amp;</p>
-<h2>Euro,&nbsp;</h2>
-<p>&nbsp;Euro</p>
-<p>Code is &amp;#8364;</p>
-<p>&#8364;</p>
-<h2>Non-breaking space,&nbsp;</h2>
-<p>Non breaking space - this is a space that will not break in to a new line e.g £5 - the £ symbol and the 5 must be together</p>
-<p>Code is &amp;nbsp - this is in the code on the split screen</p>
-<h2>Less than,</h2>
-<p>less than</p>
-<p>Code is&nbsp; either &amp;#60;&nbsp; or &amp;lt;</p>
-<p>&#60;</p>
-<p>&lt;</p>
-<h2>&nbsp;Greater than</h2>
-<p>greater than</p>
-	<p>Code is either&nbsp; &amp;#62; or &amp;gt;</p>
-	<p>&#62;</p>
-<p>&gt;</p>
+
+		<li><a href="mens.html" title="Mens" target="_blank">
+		Shop Mens</a></li>
+		<li><a href="contactus.html" title="Contact Us" target="_blank">
+		Contact Us</a></li>
+  	  </ul>
+		</nav>	
+			<aside class="aside1">
+		<a href="images/blind_large.jpg" target="_blank"><img src="images/blind_large.jpg" width="294" height="500" alt="Blind"/></a>
+				<h3>Are you blind to the damage done.</h3>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<hr>
+			<a href="mens.html" target="_blank">
+			<img src="images/mensshopping_large.jpg" width="294" height="500" alt="Shop Mens">				<h3>Shop Mens</h3></a>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<hr>
+			</aside>
+			<div class="aside2">
+			<a href="images/fastfashion_large.jpg" target="_blank">	
+				<img src="images/fastfashion_large.jpg" width="294" height="500" alt="fast fashion"/></a>
+		<h3>Are you too distracted to notice.</h3>
+			<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<hr>
+				<br>
+				<br>
+			<a href="womens.html" target="_blank">
+			<img src="images/womensshopping_large.jpg" width="294" height="500" alt="Shop Womens">
+				<h3>Shop Womens</h3></a>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<hr>
+		</div>
+		<br>
+				 
+<h1>Why Susclo?</h1>
+<p><strong>Planet Earth is dying and we are killing it. </strong>Our behaviours are causing our planet to become a place in which, if we do not change, we will not be able to live. It is said that oil is our most valuable dwindling resource but it is water that will quickly become the resource that is most needed</p>
+<p>We can live without oil but we cant live without water. Our behaviours have to change if we want to stall this pending. <strong>Susclo Sustainable Clothing</strong> wants to be part of the solution, not contribute to the problem. We also aim to educate our customers on how their purchasing habits affect the planet and how they can change to ensure that there is a planet for future generations. </p>
+		<hr>
+		<h3>Is fast fashion destroying our environment?</h3>
+		<div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YOA0D0i5-fA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<hr>
+		<h3>Princeton University study on how fast fashion contributes to the destruction of the environment.</h3>
+		<div class="link">
+<a href="https://psci.princeton.edu/tips/2020/7/20/the-impact-of-fast-fashion-on-the-environment">Impact of fast fashion on the environment</a>
+		</div>
+		<hr>
+		<h3>How you can change your habits to benefit the planet</h3>
+		<div class="link">
+<a href="https://www.newstalk.com/podcasts/highlights-from-the-pat-kenny-show/switching-from-fast-fashion-to-sustainable-clothing">Switching to sustainable clothing</a>
+		</div>
+		<hr>
+		
+		<div class="video">
+			<a href="social.html">
+				<h3>Join our Community</h3>
+				<img src="images/community.jpg" width="560" height="315" alt="community"/></a>
+		</div>
+		<h4>Purchase your clothing from us and we guarantee that you will have the minimum impact on the environment from production of, or delivery of, your clothes. They will last a long time and not go out of fashion. Please subscribe to our newsletter below for updates on offers and up to date information.</h4>
+		<br>
+		<h2>Please sign up for our monthly newsletter on our Contact Us page</h2>
+		 
+<div class="link">
+  <a href="contactus.html" title="Contact Us" target="_blank">
+	  Contact Us</a></div>
+			<br>
+			<br>
+			<hr>
+	</main>
+
+	
+	<footer>
+		
+<h2>&#169;Patrick O Sullivan 2022</h2>	
+	</footer>
+	</div>
 </body>
 </html>
